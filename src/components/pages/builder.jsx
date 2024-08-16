@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Builder = () => {
-  return (
-    <div>Builder</div>
-  )
-}
+  return <div>Builder</div>;
+};
 
-export default Builder
+export default Builder;

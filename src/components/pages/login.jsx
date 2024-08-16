@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Topbar } from "../ui/navigation/topbar";
 
 const Login = () => {
   return (
-    <div>Login</div>
-  )
-}
+    <div>
+      <Topbar />
+    </div>
+  );
+};
 
-export default Login
+export default Login;
