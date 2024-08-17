@@ -1,9 +1,4 @@
-import {
-  Card,
-  List,
-  ListItem,
-  ListItemPrefix,
-} from "@material-tailwind/react";
+import { Card, List, ListItem, ListItemPrefix } from "@material-tailwind/react";
 import { SidebarItems } from "../../../utils/constants";
 import { Link } from "react-router-dom";
 
@@ -13,12 +8,12 @@ export function Sidebar() {
       <List>
         {SidebarItems.map((item, index) => (
           <Link key={index} to={item.link}>
-          <ListItem>
-            <ListItemPrefix>
-              <item.icon className="h-5 w-5" />
-            </ListItemPrefix>
-            {item.label}
-          </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <item.icon className="h-5 w-5" />
+              </ListItemPrefix>
+              {item.label}
+            </ListItem>
           </Link>
         ))}
       </List>

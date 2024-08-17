@@ -8,21 +8,25 @@ import {
 } from "@material-tailwind/react";
 import { NavList } from "../../../utils/constants";
 import { Link } from "react-router-dom";
- 
+
 export function Topbar() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false),
     );
   }, []);
- 
+
   return (
     <Navbar className="mx-auto min-w-full px-2 py-2 lg:px-2 lg:py-4">
       <div className="container mx-auto flex flex-wrap items-center justify-between text-blue-gray-900">
-        <img src="./src/assets/logo.svg" alt="logo" className="mr-4 cursor-pointer py-1.5 font-medium w-16 h-16"/>
+        <img
+          src="./src/assets/logo.svg"
+          alt="logo"
+          className="mr-4 cursor-pointer py-1.5 font-medium w-16 h-16"
+        />
         {/**Search Bar */}
         <div className="hidden items-center gap-x-2 lg:flex">
           <div className="relative flex w-full gap-2 md:w-max">
@@ -61,9 +65,12 @@ export function Topbar() {
           </div>
         </div>
         {/**list of Nav */}
-        <div className="hidden lg:block">{NavList}</div><Link to="/login"><Button size="md" className="rounded-lg ">
+        <div className="hidden lg:block">{NavList}</div>
+        <Link to="/login">
+          <Button size="md" className="rounded-lg ">
             Login
-          </Button></Link>
+          </Button>
+        </Link>
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
