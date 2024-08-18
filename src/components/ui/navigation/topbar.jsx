@@ -23,7 +23,7 @@ export function Topbar() {
     <Navbar className="mx-auto min-w-full px-2 py-2 lg:px-2 lg:py-4">
       <div className="container mx-auto flex flex-wrap items-center justify-between text-blue-gray-900">
         <img
-          src="./src/assets/logo.svg"
+          src="/assets/logo.svg"
           alt="logo"
           className="mr-4 cursor-pointer py-1.5 font-medium w-16 h-16"
         />

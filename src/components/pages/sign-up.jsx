@@ -11,7 +11,7 @@ export default function SignUp() {
         className="items-center justify-center"
       >
         <img
-          src="./src/assets/logo.svg"
+          src="/assets/logo.svg"
           alt="logo"
           className="mr-4 cursor-pointer py-1.5 font-medium w-16 h-16"
         />

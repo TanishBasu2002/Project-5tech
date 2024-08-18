@@ -2,12 +2,9 @@ import {
   PresentationChartBarIcon,
   ShoppingBagIcon,
   UserCircleIcon,
-  Cog6ToothIcon,
   InboxIcon,
-  PowerIcon,
 } from "@heroicons/react/24/solid";
 import { Typography } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
 
 export const SidebarItems = [
   { icon: PresentationChartBarIcon, label: "Dashboard", link: "/" },
